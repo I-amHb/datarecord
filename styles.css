@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  border: 1px solid black
+}
+
+table {
+  width: 200px;
+  th {
+    text-align:start;
+  }
+}
+
+input {
+  width: 50px;
+  min-width: 50px;
+}
