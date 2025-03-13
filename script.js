@@ -50,7 +50,12 @@ const renderArr = () => {
 };
 
 btn.addEventListener('click',  () => {
-   registryArr.push({name: nameInput.value, age: ageInput.value});
+   
+   if (nameInput.value.trim() == '' || ageInput.value.trim() == '') {
+    return alert('Error empty inputs')
+   } else {
+    registryArr.push({name: nameInput.value, age: ageInput.value});
+   }
   
   renderArr();
   
